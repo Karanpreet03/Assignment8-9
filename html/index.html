@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/validation.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to the Registration form</h1>
+      <form id="registrationForm">
+        <div>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="dateOfBirth">Date Of Birth</label>
+          <input type="date" name="dateOfBirth" id="dateOfBirth" required />
+        </div>
+        <div>
+          <label>Gender</label>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" required />
+          <label for="female">Female</label>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            required
+          />
+          <label for="others">Others</label>
+          <input
+            type="radio"
+            name="gender"
+            id="others"
+            value="others"
+            required
+          />
+         
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm password</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" />
+        </div>
+        <div>
+            <label for="courseList">Course</label>
+            <select name="courseList" id="courseList">
+                <option value="FSDT">Full stack software development</option>
+                <option value="DOCT">Devops Cloud Computing</option>
+                <option value="PMT">Project Management</option>
+                <option value="FSQT">Food Safety and Quality Assurance</option>
+            </select>
+        </div>
+        <div>
+            <label for="sem">Semester</label>
+                <select name="sem" id="sem">
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                </select>
+            </label>
+        </div>
+        <button type="button" onclick="validateForm()" value="submit" id="submit">Submit</button>
+        <button type="reset" id="reset" value="reset">Reset</button>
+      </form>
+    </main>
+    
+  </body>
+</html>
