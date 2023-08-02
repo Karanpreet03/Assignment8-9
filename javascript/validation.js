@@ -1,3 +1,6 @@
+// Created By: Karanpreet Sachdeva
+// ID: C0884994
+// Program logic for the registration form
 function validateForm() {
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
